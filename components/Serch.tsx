@@ -24,15 +24,18 @@ function Serch() {
   }, [search]);
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="search.."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-    </div>
-  );
+  
+  <div className="w-full max-w-md">
+    <input
+      type="text"
+      placeholder="Search by title..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      className="w-full px-4 py-3 rounded-lg border border-[#D8CFC0] bg-white text-[#1F1B16] placeholder:text-[#9C9284] focus:outline-none focus:ring-2 focus:ring-[#3D5A44] focus:border-transparent transition"
+    />
+  </div>
+);
+  
 }
 
 export default Serch; // 👈 this was missing

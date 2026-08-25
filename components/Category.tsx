@@ -21,12 +21,17 @@ function Category() {
   };
 
   return (
-    <select onChange={handleChange} name="category" id="category">
-      <option value="ALL">All</option>
-      <option value="Fiction">Fiction</option>
-      <option value="Non-Fiction">Non-Fiction</option>
-      <option value="Information">Information</option>
-    </select>
+   <select
+  onChange={handleChange}
+  name="category"
+  id="category"
+  className="px-4 py-3 rounded-lg border border-[#D8CFC0] bg-white text-[#1F1B16] focus:outline-none focus:ring-2 focus:ring-[#3D5A44] cursor-pointer"
+>
+  <option value="ALL">All Categories</option>
+  <option value="Fiction">Fiction</option>
+  <option value="Non-Fiction">Non-Fiction</option>
+  <option value="Information">Information</option>
+</select>
   );
 }
 
