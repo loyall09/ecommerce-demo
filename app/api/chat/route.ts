@@ -4,6 +4,8 @@ import { products } from "@/lib/data"
 export async function POST(req: NextRequest) {
   try {
     const { message } = await req.json()
+    console.log("KEY LENGTH:", process.env.GEMINI_API_KEY?.length)
+console.log("KEY PREFIX:", process.env.GEMINI_API_KEY?.slice(0, 6))
 
     if (!message || typeof message !== "string") {
       return NextResponse.json({ error: "Message is required" }, { status: 400 })
