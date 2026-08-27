@@ -172,7 +172,7 @@ export default function ChatWidget() {
               onKeyDown={handleKeyDown}
               placeholder="Ask for a recommendation..."
               disabled={isLoading}
-              className="flex-1 rounded-full border border-gray-300 px-3 py-2 text-sm outline-none focus:border-[#3D5A44]"
+              className="flex-1 rounded-full border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 outline-none focus:border-[#3D5A44]"
             />
             <button
               onClick={handleSend}
